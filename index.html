@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prabhanjan Balakrishnan — Portfolio</title>
+  <meta name="description" content="Prabhanjan Balakrishnan, a Business Analyst in the NYC area targeting Fintech. SQL, Tableau and Claude Code projects, plus a bit about me.">
+  <meta property="og:title" content="Prabhanjan Balakrishnan — Portfolio">
+  <meta property="og:description" content="Prabhanjan Balakrishnan, a Business Analyst in the NYC area targeting Fintech. SQL, Tableau and Claude Code projects, plus a bit about me.">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f14'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%2334d399' font-family='monospace'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand"><span class="accent">~/</span><span data-bind="handle">me</span><span class="cursor" aria-hidden="true">_</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#projects"><span class="num">01.</span>projects</a></li>
+          <li><a href="#about"><span class="num">02.</span>about</a></li>
+          <li><a href="#skills"><span class="num">03.</span>skills</a></li>
+          <li><a href="#personal"><span class="num">04.</span>personal</a></li>
+          <li><a href="#contact"><span class="num">05.</span>contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow mono">Hi, my name is</p>
+        <h1 data-bind="name">Prabhanjan Balakrishnan</h1>
+        <p class="hero-role" data-bind="role">Business Analyst</p>
+        <p class="hero-tagline" data-bind="tagline"></p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#" class="btn" data-link="resume" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Terminal introduction">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title mono">zsh — whoami</span>
+        </div>
+        <div class="terminal-body mono">
+          <p><span class="prompt">❯</span> whoami</p>
+          <p class="out" data-bind="name"></p>
+          <p><span class="prompt">❯</span> cat role.txt</p>
+          <p class="out" data-bind="role"></p>
+          <p><span class="prompt">❯</span> echo $LOCATION</p>
+          <p class="out" data-bind="location"></p>
+          <p><span class="prompt">❯</span> ./about.sh</p>
+          <p class="out"><span class="accent">→</span> <span id="typed"></span><span class="cursor" aria-hidden="true">▌</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title"><span class="num">01.</span> things I've built</h2>
+      <div class="filters mono" id="filters" role="group" aria-label="Filter projects by tag"></div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container reveal">
+      <h2 class="section-title"><span class="num">02.</span> about me</h2>
+      <div class="about-grid">
+        <div class="about-text" id="about-text"></div>
+        <figure class="avatar">
+          <img src="assets/avatar.jpg" alt="Prabhanjan Balakrishnan" width="280" height="280">
+        </figure>
+      </div>
+      <div class="currently mono" id="currently"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title"><span class="num">03.</span> skills</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section id="personal" class="section container reveal">
+      <h2 class="section-title"><span class="num">04.</span> beyond the code</h2>
+      <p class="mono muted cmd"><span class="prompt">❯</span> cat interests.txt</p>
+      <div class="interests-grid" id="interests-grid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal contact">
+      <h2 class="section-title center"><span class="num">05.</span> say hello</h2>
+      <p class="contact-text" data-bind="contactText">Whether it's an opportunity, a question about a project, or just to chat — my inbox is open.</p>
+      <a class="btn btn-primary btn-lg" data-link="email" href="#">Send me an email</a>
+      <div class="email-row mono">
+        <span id="email-text"></span>
+        <button type="button" id="copy-email" class="copy-btn">Copy</button>
+      </div>
+      <ul class="social mono">
+        <li><a data-link="github" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a data-link="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a data-link="resume" href="#" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <p>© <span id="year"></span> <span data-bind="name"></span> · built by hand with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
