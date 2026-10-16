@@ -122,13 +122,25 @@
     });
     return ul;
   };
-  S.interests.forEach((i) => {
+  if (ig) S.interests.forEach((i) => {
     const card = el("div", { class: "interest" },
       el("span", { class: "emoji", "aria-hidden": "true" }, i.emoji),
       el("h3", {}, i.title));
     if (i.text) card.append(el("p", {}, i.text));
     if (i.list) card.append(buildList(i.list, "interest-list"));
     ig.append(card);
+  });
+
+  // ---- Experience (most recent first, in the order listed in data.js) ----
+  const tl = $("#timeline");
+  if (tl) (S.experience || []).forEach((job) => {
+    const meta = el("div", { class: "job-meta" }, el("span", { class: "job-dates" }, job.dates || ""));
+    if (job.location) meta.append(el("span", { class: "job-loc" }, job.location));
+    const head = el("h3", {}, job.role || "");
+    if (job.company) head.append(el("span", { class: "job-company" }, ` @ ${job.company}`));
+    const body = el("div", { class: "job-body" }, head);
+    if (job.bullets && job.bullets.length) body.append(buildList(job.bullets, "job-list"));
+    tl.append(el("li", { class: "job" }, meta, body));
   });
 
   // ---- Typing effect ----

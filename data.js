@@ -93,6 +93,64 @@ window.SITE = {
     }
   ],
 
+  // Work history, shown as a timeline. List the most recent role first.
+  // A bullet can be "text", or { label: "Heading", items: ["sub-bullet", ...] } for grouped bullets.
+  // Lines starting with // are notes for you and never appear on the site.
+  experience: [
+    {
+      role: "Supply Chain Consultant (Contract)",
+      company: "OnScent",
+      location: "Norwood, NJ",
+      dates: "Mar 2025 – Jul 2026",
+      bullets: [
+        { label: "Analysis", items: [
+          "Created BatchMetrics reports across 70+ fragrances using SQL joins, aggregations, and data-validation queries to identify shortages, data discrepancies, and purchasing exceptions, supporting root-cause analysis, inventory decisions, and work order prioritization on the production floor.",
+          // FILL IN: another analysis bullet, e.g. "Analyzed ... to ..., resulting in ..."
+        ] },
+        { label: "Planning", items: [
+          "Led the team to a 28% increase in on-time customer shipments by analyzing demand, inventory, and replenishment data in NetSuite and BatchMetrics across customer and warehouse locations, optimizing safety stock levels.",
+          // FILL IN: another planning bullet, e.g. "Planned ... for ..., which ..."
+        ] },
+        { label: "Procurement", items: [
+          "Tracked $500K+ in non-stock expenditure by gathering requirements from Finance and Procurement to build a standardized approval workflow and department-level spend tracker, improving budget auditability and on-time vendor fulfillment.",
+          // FILL IN: another procurement bullet, e.g. "Sourced / negotiated ... with ... vendors, saving ..."
+        ] }
+      ]
+    },
+    {
+      role: "Pricing Analyst II (Contract)",
+      company: "CertainTeed (Saint-Gobain)",
+      location: "Malvern, PA",
+      dates: "May 2024 – Jul 2024",
+      bullets: [
+        "Drove the accurate, on-time delivery of $150K+ in rebate payments to 30+ regional customers by partnering with sales managers in Salesforce.",
+        "Resolved $15K+ in customer payment discrepancies from geographic and contractual pricing variance by analyzing data in LOOKUPs/Pivot Tables and Salesforce, communicating root-cause findings directly to 6 customers monthly."
+      ]
+    },
+    {
+      role: "Finance Coordinator (Financial Analyst)",
+      company: "Savencia Cheese USA",
+      location: "New Holland, PA",
+      dates: "Jan 2023 – Oct 2023",
+      bullets: [
+        "Reduced aged deductions by $4M by analyzing price, volume, mix, trade spend, and deduction data across top customer accounts and driving remediation plans.",
+        "Cut reporting turnaround time 30% by building and automating financial and operational KPI reporting in SAP/BEX.",
+        "Delivered clear, decision-ready insights for leadership by developing variance and bridge analyses of complex financial drivers."
+      ]
+    },
+    {
+      role: "New Acquisition Analyst (Implementation and Onboarding)",
+      company: "Cenlar FSB",
+      location: "Ewing Township, NJ",
+      dates: "Aug 2021 – Oct 2022",
+      bullets: [
+        "Onboarded 11 bank and mortgage clients while meeting 100% of contractual SLA and regulatory/investor requirements.",
+        "Headed the onboarding process for 10 additional clients by defining business requirements and process flows for a standardized onboarding framework, validated with cross-functional teams against regulatory/SLA requirements.",
+        "Earned the True-Blue Award twice by improving onboarding visibility for internal and client stakeholders, building SQL and Excel-based reporting (LOOKUPs, Pivot Tables, Macros) to track progress and flag data outliers."
+      ]
+    }
+  ],
+
   // The "personal side" section. emoji + title + short text and/or a bullet list.
   // A bullet can be "text", or { label: "Heading", items: ["sub-bullet", ...] } for sub-bullets.
   interests: [
