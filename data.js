@@ -30,8 +30,11 @@ window.SITE = {
     reading:  "Dan Brown: Origin"
   },
 
+  // Each line is one skill box: "Box title": ["skill", "skill", ...], (comma after every line but the last)
   skills: {
-    "Tools":      ["SQL", "Git", "GitHub", "VS Code", "Claude Code", "SQLite", "Tableau", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint", "SAP", "Salesforce", "Black Knight", "BatchMetrics", "NetSuite"]
+    "Data & Analytics":    ["SQL", "Tableau", "Microsoft Excel"],
+    "Business Systems":    ["SAP", "Salesforce", "NetSuite", "BatchMetrics", "Black Knight"],
+    "Productivity & Dev":  ["Claude Code", "Git", "GitHub", "VS Code", "Microsoft Word", "Microsoft PowerPoint"]
   },
 
   // featured: true puts a project at the top with a highlight.
