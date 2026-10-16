@@ -99,10 +99,12 @@ window.SITE = {
   // Work history, shown as a timeline. List the most recent role first.
   // A bullet can be "text", or { label: "Heading", items: ["sub-bullet", ...] } for grouped bullets.
   // Lines starting with // are notes for you and never appear on the site.
+  // logo is optional: a square image in assets/logos/.
   experience: [
     {
       role: "Supply Chain Consultant (Contract)",
       company: "OnScent",
+      logo: "assets/logos/onscent.png",
       location: "Norwood, NJ",
       dates: "Mar 2025 – Jul 2026",
       bullets: [
@@ -127,6 +129,7 @@ window.SITE = {
     {
       role: "Pricing Analyst II (Contract)",
       company: "CertainTeed (Saint-Gobain)",
+      logo: "assets/logos/certainteed.png",
       location: "Malvern, PA",
       dates: "May 2024 – Jul 2024",
       bullets: [
@@ -137,6 +140,7 @@ window.SITE = {
     {
       role: "Finance Coordinator (Financial Analyst)",
       company: "Savencia Cheese USA",
+      logo: "assets/logos/savencia.png",
       location: "New Holland, PA",
       dates: "Jan 2023 – Oct 2023",
       bullets: [
@@ -148,6 +152,7 @@ window.SITE = {
     {
       role: "New Acquisition Analyst (Implementation and Onboarding)",
       company: "Cenlar FSB",
+      logo: "assets/logos/cenlar.svg",
       location: "Ewing Township, NJ",
       dates: "Aug 2021 – Oct 2022",
       bullets: [

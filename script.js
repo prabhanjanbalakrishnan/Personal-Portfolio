@@ -134,7 +134,9 @@
   // ---- Experience (most recent first, in the order listed in data.js) ----
   const tl = $("#timeline");
   if (tl) (S.experience || []).forEach((job) => {
-    const meta = el("div", { class: "job-meta" }, el("span", { class: "job-dates" }, job.dates || ""));
+    const meta = el("div", { class: "job-meta" });
+    if (job.logo) meta.append(el("span", { class: "job-logo" }, el("img", { src: job.logo, alt: `${job.company} logo`, loading: "lazy", width: "40", height: "40" })));
+    meta.append(el("span", { class: "job-dates" }, job.dates || ""));
     if (job.location) meta.append(el("span", { class: "job-loc" }, job.location));
     const head = el("h3", {}, job.role || "");
     if (job.company) head.append(el("span", { class: "job-company" }, ` @ ${job.company}`));
