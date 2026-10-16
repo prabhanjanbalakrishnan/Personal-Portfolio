@@ -31,8 +31,7 @@ window.SITE = {
   },
 
   skills: {
-    "Languages":  ["SQL", "Python", ],
-    "Tools":      ["Git", "GitHub", "VS Code", "Claude Code", "SQLite", "Tableau", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint"]
+    "Tools":      ["SQL", "Git", "GitHub", "VS Code", "Claude Code", "SQLite", "Tableau", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint"]
   },
 
   // featured: true puts a project at the top with a highlight.
