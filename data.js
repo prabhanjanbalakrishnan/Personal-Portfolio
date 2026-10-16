@@ -7,7 +7,7 @@ window.SITE = {
   name: "Prabhanjan Balakrishnan",
   handle: "prabhanjan_balakrishnan",              // shown in the nav as ~/handle
   role: "Business Analyst",
-  tagline: "I build practical tools that solve real problems — usually ones I had first, and wished someone had solved for me earlier. Keen on mastering AI, SQL, Python and Analytics.",
+  tagline: "I build practical tools that solve real problems — usually ones I had first, and wished someone had solved for me earlier. Keen on mastering AI, SQL, Python and Analytics to improve financial decision-making.",
   location: "Based In: New York City Metropolitan Area, United States",
 
   // Lines typed out in the hero terminal, one after another.
