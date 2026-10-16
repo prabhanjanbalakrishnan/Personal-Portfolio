@@ -104,13 +104,13 @@ window.SITE = {
       dates: "Mar 2025 – Jul 2026",
       bullets: [
         { label: "Analysis", items: [
-          "Created BatchMetrics reports across 70+ fragrances using SQL joins, aggregations, and data-validation queries to identify shortages, data discrepancies, and purchasing exceptions, supporting root-cause analysis, inventory decisions, and work order prioritization on the production floor.",
-	  "Proactively flagged and resolved inventory discrepancies among 90+ fragrances; noticed mismatches in inventory reports that weren’t on anyone’s radar, took ownership of the reconciliation, and drove the fix end to end, coordinating with system-authorized staff to realign stock to the correct warehouses and restore accurate inventory visibility across sites.",
+          "Created BatchMetrics reports across 70+ make-to-stock fragrances using SQL joins, aggregations, and data-validation queries to identify shortages, data discrepancies, and purchasing exceptions, supporting root-cause analysis, inventory decisions, and work order prioritization on the production floor.",
+	  "Proactively flagged and resolved inventory discrepancies among 90+ West Coast fragrances; noticed mismatches in inventory reports that weren’t on anyone’s radar, took ownership of the reconciliation, and drove the fix end to end, coordinating with system-authorized staff to realign stock to the correct warehouses and restore accurate inventory visibility across sites.",
           // FILL IN: another analysis bullet, e.g. "Analyzed ... to ..., resulting in ..."
         ] },
         { label: "Planning", items: [
           "Led the team to a 28% increase in on-time customer shipments by analyzing demand, inventory, and replenishment data in NetSuite and BatchMetrics across customer and warehouse locations, optimizing safety stock levels.",
-	  "Owned end-to-end process for West Coast orders; created work orders in BatchMetrics, and collaborated cross-functionally with Production, QC and Shipping team to ensure that work orders would be completed on time to ship out to the customer.",
+	  "Owned end-to-end process for West Coast orders; created work orders in BatchMetrics, and collaborated cross-functionally with Production, QC and Shipping teams to ensure that work orders would be completed on time to ship out to the customer.",
           // FILL IN: another planning bullet, e.g. "Planned ... for ..., which ..."
         ] },
         { label: "Procurement", items: [
