@@ -39,11 +39,12 @@ window.SITE = {
 
   // featured: true puts a project at the top with a highlight.
   // image: path to a screenshot in assets/projects/ (optional).
+  // description: one "string", or a list ["paragraph 1", "paragraph 2"] for several paragraphs.
   projects: [
     {
       title: "Multi-Bank SQL Database",
-      description: "A SQLite database I designed from scratch to track customers' accounts and transactions across five banks, similar to how aggregators like Plaid or Mint work. It holds 424 sample transactions for 11 customers, stores money in cents to avoid rounding errors, and uses triggers to update balances automatically. I wrote analysis queries to find where the money goes each month, who the biggest spenders are, and which bank carries a concentration risk.",
-      tags: ["SQL", "SQLite"],
+      description: "A SQL database I designed from scratch using SQLite to track customers' accounts and transactions across five banks, similar to how aggregators like Plaid or Mint work. It holds 424 sample transactions for 11 customers, stores money in cents to avoid rounding errors, and uses triggers to update balances automatically. I wrote analysis queries to find where the money goes each month, who the biggest spenders are, and which bank carries a concentration risk.",
+      tags: ["SQL"],
       github: "https://github.com/prabhanjanbalakrishnan/Multi-Bank-SQL-Database",
       demo: "",
       image: "assets/projects/multi-bank-schema.svg",
@@ -69,8 +70,8 @@ window.SITE = {
     },
     {
       title: "Hotel Points Optimizer",
-      description: "This is a website that allows users to input all their membership information they have with hotels. This includes which hotel chains they have, membership status they have at each hotel, and how many points they have at each hotel chain. They then can explore options by destination, dates they plan to go, how many people are traveling and how many rooms they might need, which allows the users to see which hotel chains might be best suited for that specific location. It also gives a ranking system of which hotel chains gives the value for your money, while also categorizing within each hotel stay by property tier, with how many points you would need for each type of stay, with a cash value for each one, with how many nights it would cover given your points balance.",
-      tags: ["Claude Code"],
+      description: "This is a website created with Claude Code that allows users to input all their membership information they have with hotels. This includes which hotel chains they have, membership status they have at each hotel, and how many points they have at each hotel chain. They then can explore options by destination, dates they plan to go, how many people are traveling and how many rooms they might need, which allows the users to see which hotel chains might be best suited for that specific location. It also gives a ranking system of which hotel chains gives the value for your money, while also categorizing within each hotel stay by property tier, with how many points you would need for each type of stay, with a cash value for each one, with how many nights it would cover given your points balance.",
+      tags: ["AI-Directed Development"],
       github: "https://github.com/prabhanjanbalakrishnan/Hotel-Points-Optimizer",
       demo: "https://hotel-points-optimizer.vercel.app/",
       image: "assets/projects/hotel-points-optimizer.jpg",
@@ -78,8 +79,8 @@ window.SITE = {
     },
     {
       title: "Card Compare",
-      description: "This is a website that allows users to compare different credit cards across multiple banks. I created this because I wanted a place where I can compare different credit cards without having to open multiple bank sites to look at the perks and benefits of each card and the points system for each one. I genuinely believe that points strategy is going to be the next big thing when it comes to credit cards - how people use their points and how people would ideally like to use their points are not always aligned and I believe this is something that companies will observe more closely and try to create products based on this.",
-      tags: ["Claude Code"],
+      description: "This is a website created with Claude Code that allows users to compare different credit cards across multiple banks. I created this because I wanted a place where I can compare different credit cards without having to open multiple bank sites to look at the perks and benefits of each card and the points system for each one. I genuinely believe that points strategy is going to be the next big thing when it comes to credit cards - how people use their points and how people would ideally like to use their points are not always aligned and I believe this is something that companies will observe more closely and try to create products based on this.",
+      tags: ["AI-Directed Development"],
       github: "https://github.com/prabhanjanbalakrishnan/Card-Compare",
       demo: "https://card-compare-ashy.vercel.app/",
       image: "assets/projects/card-compare.jpg",
@@ -87,8 +88,11 @@ window.SITE = {
     },
     {
       title: "Pokepedia",
-      description: "This is my first project I used Claude Code to build. This is essentially a Pokemon database that covers all their stats and info for the first 8 generations of Pokemon. You can also build your own team across multiple generations, see where your team's strengths and exposures lie. I even made a special fun feature that gives out the cry of each Pokemon. Try it out and let me know if you think it's fun or not!",
-      tags: ["Claude Code", "SQL"],
+      description: [
+        "This is my first project I used Claude Code to build. This is essentially a Pokemon database that covers all their stats and info for the first 8 generations of Pokemon. You can also build your own team across multiple generations, see where your team's strengths and exposures lie. I even made a special fun feature that gives out the cry of each Pokemon. Try it out and let me know if you think it's fun or not!",
+        "I also created a SQL database for this to run analysis queries that showed rankings of pokemon by generation, which pokemon were the strongest of each generation, and the stat differences between legendary and non-legendary pokemon."
+      ],
+      tags: ["AI-Directed Development", "SQL"],
       github: "https://github.com/prabhanjanbalakrishnan/Pokepedia",
       demo: "https://pokepedia-ten.vercel.app/",
       image: "assets/projects/pokepedia.jpg",

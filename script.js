@@ -89,7 +89,10 @@
     const links = el("div", { class: "project-links" });
     if (p.github) links.append(el("a", { href: p.github, target: "_blank", rel: "noopener" }, "</> code"));
     if (p.demo) links.append(el("a", { href: p.demo, target: "_blank", rel: "noopener" }, "↗ live demo"));
-    card.append(el("div", { class: "project-body" }, head, el("p", {}, p.description), tags, links));
+    // description can be one "string" or a list of strings, one per paragraph
+    const desc = el("div", { class: "project-desc" });
+    [].concat(p.description || []).forEach((para) => desc.append(el("p", {}, para)));
+    card.append(el("div", { class: "project-body" }, head, desc, tags, links));
     pg.append(card);
   });
 
