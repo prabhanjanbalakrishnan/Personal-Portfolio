@@ -161,7 +161,7 @@ window.SITE = {
       dates: "Aug 2021 – Oct 2022",
       bullets: [
         "Onboarded 11 bank and mortgage clients while meeting 100% of contractual SLA and regulatory/investor requirements.",
-        "Headed the onboarding process for 10 additional clients by defining business requirements and process flows for a standardized onboarding framework, validated with cross-functional teams against regulatory/SLA requirements.",
+        "Headed the onboarding process for 10 additional clients by defining business requirements and creating a standardized workflow for onboarding framework, validated with cross-functional teams against regulatory/SLA requirements.",
         "Earned the True-Blue Award twice by improving onboarding visibility for internal and client stakeholders, building SQL and Excel-based reporting (LOOKUPs, Pivot Tables, Macros) to track progress and flag data outliers."
       ]
     }
