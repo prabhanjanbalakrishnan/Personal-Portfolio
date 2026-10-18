@@ -26,7 +26,7 @@ window.SITE = {
 
   currently: {
     building: "AI tools to help with planning finances and trips better!",
-    learning: "SQL, Python, Claude Code",
+    learning: "SQL, Python, AI Engineering",
     reading:  "Dan Brown: Origin"
   },
 
