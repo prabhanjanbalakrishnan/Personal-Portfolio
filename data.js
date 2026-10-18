@@ -161,7 +161,7 @@ window.SITE = {
       dates: "Aug 2021 – Oct 2022",
       bullets: [
         "Onboarded 11 bank and mortgage clients while meeting 100% of contractual SLA and regulatory/investor requirements.",
-        "Translated complex loan note terms into servicing system requirements, configuring Black Knight MSP to accurately reflect payment structures, rate adjustments, and regulatory provisions for newly acquired loans.",
+        "Analyzed 18–20 loan notes per day (350+ in one month), translating payment structures, rate adjustments, and regulatory provisions into a standardized Excel data template used to set up newly acquired loans in Black Knight MSP.",
         "Headed the onboarding process for 10 additional clients by defining business requirements and creating a standardized client-onboarding workflow to transition their loan portfolios onto Cenlar's servicing platform, validated with cross-functional teams against regulatory/SLA requirements.",
         "Earned the True-Blue Award twice by improving onboarding visibility for internal and client stakeholders, building SQL and Excel-based reporting (LOOKUPs, Pivot Tables, Macros) to track progress and flag data outliers."
       ]
