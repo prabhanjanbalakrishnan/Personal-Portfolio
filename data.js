@@ -160,9 +160,8 @@ window.SITE = {
       location: "Ewing Township, NJ",
       dates: "Aug 2021 – Oct 2022",
       bullets: [
-        "Onboarded 11 bank and mortgage clients while meeting 100% of contractual SLA and regulatory/investor requirements.",
-        "Pulled onto a year-end priority initiative to analyze 300+ loan notes in ~4 weeks (18–20/day), translating payment structures, rate adjustments, and regulatory provisions into a standardized data template for setting up newly acquired loans in Black Knight MSP.",
-        "Headed the onboarding process for 10 additional clients by defining business requirements and creating a standardized client-onboarding workflow to transition their loan portfolios onto Cenlar's servicing platform, validated with cross-functional teams against regulatory/SLA requirements.",
+        "Onboarded 11 bank and mortgage-lender clients while meeting 100% of contractual SLA and regulatory/investor requirements by defining business requirements and creating a standardized client-onboarding workflow to transition their loan portfolios onto Cenlar's servicing platform, validated with cross-functional teams against regulatory/SLA requirements.",
+        "Pulled onto a year-end priority initiative to analyze 300+ loan notes in 1 month, translating payment structures, rate adjustments, and regulatory provisions into a standardized data template for setting up newly acquired loans in Black Knight MSP.",
         "Earned the True-Blue Award twice by improving onboarding visibility for internal and client stakeholders, building SQL and Excel-based reporting (LOOKUPs, Pivot Tables, Macros) to track progress and flag data outliers."
       ]
     }
