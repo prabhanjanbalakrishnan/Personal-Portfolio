@@ -42,6 +42,18 @@ window.SITE = {
   // description: one "string", or a list ["paragraph 1", "paragraph 2"] for several paragraphs.
   projects: [
     {
+      title: "Lending Club Credit Risk Dashboard",
+      description: [
+        "An end-to-end analysis of 2.26 million Lending Club consumer loans (2007–2018), from raw data to a published Tableau dashboard. I loaded the 1.68 GB raw file into SQLite, wrote one query to clean it into a typed, analysis-ready table (converting text to numbers and dates, grouping ten inconsistent loan statuses into Good, Bad and Active, and dropping 33 junk summary rows), then built five summary views for Tableau.",
+        "The dashboard shows that risk-based pricing works in direction but not in proportion: grade G borrowers pay 4× grade A's interest rate yet default 8× as often (49.7% vs. 6.0%). Default rate is measured only on finished loans, so loans still being repaid don't make the portfolio look safer than it is. I also checked the sample size behind every number, excluding loan purposes with fewer than 5,000 loans and Iowa (14 loans), and flagged that 2016–2018 default rates aren't final because many of those loans were still active when the data was pulled."
+      ],
+      tags: ["SQL", "Tableau"],
+      github: "",
+      demo: "https://public.tableau.com/app/profile/prabhanjan.balakrishnan/viz/LendingClubCreditRiskDashboard_17925517664780/LendingClubPortfolioCreditRiskandPerformance",
+      image: "assets/projects/lending-club-dashboard.png",
+      featured: true
+    },
+    {
       title: "Multi-Bank SQL Database",
       description: "A SQL database I designed from scratch using SQLite to track customers' accounts and transactions across five banks, similar to how aggregators like Plaid or Mint work. It holds 424 sample transactions for 11 customers, stores money in cents to avoid rounding errors, and uses triggers to update balances automatically. I wrote analysis queries to find where the money goes each month, who the biggest spenders are, and which bank carries a concentration risk.",
       tags: ["SQL"],
