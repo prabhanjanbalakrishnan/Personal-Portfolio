@@ -176,6 +176,16 @@ window.SITE = {
         "Pulled onto a year-end priority initiative to analyze 300+ loan notes in 1 month, translating payment structures, rate adjustments, and regulatory provisions into a standardized data template for setting up newly acquired loans in Black Knight MSP.",
         "Earned the True-Blue Award twice by improving onboarding visibility for internal and client stakeholders, building SQL and Excel-based reporting (LOOKUPs, Pivot Tables, Macros) to track progress and flag data outliers."
       ]
+    },
+    {
+      role: "Summer Business Analyst",
+      company: "IFF",
+      logo: "assets/logos/iff.png",
+      location: "Hazlet, NJ",
+      dates: "Jul 2019 – Aug 2019",
+      bullets: [
+        "Helped sales reps match customers to best-fit products by designing a template for a customer-facing sales app that mapped product features to customer needs."
+      ]
     }
   ],
 
