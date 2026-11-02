@@ -135,6 +135,18 @@
   });
 
   // ---- Experience (most recent first, in the order listed in data.js) ----
+  const cg = $("#certs-grid");
+  if (cg) (S.certifications || []).forEach((c) => {
+    const name = c.link
+      ? el("a", { href: c.link, target: "_blank", rel: "noopener" }, c.name || "")
+      : (c.name || "");
+    const card = el("li", { class: "cert" });
+    if (c.type) card.append(el("span", { class: "cert-type" }, c.type));
+    card.append(el("h3", {}, name));
+    card.append(el("p", { class: "cert-meta" }, [c.issuer, c.date].filter(Boolean).join(" · ")));
+    cg.append(card);
+  });
+
   const tl = $("#timeline");
   if (tl) (S.experience || []).forEach((job) => {
     const meta = el("div", { class: "job-meta" });

@@ -12,6 +12,7 @@ A single-page portfolio site in plain HTML, CSS and JS, with no build step.
 - **About me**: each quoted string in `about` is one paragraph.
 - **Interests**: a card can have `text`, a bullet `list`, or both. A bullet can be `"text"` or `{ label: "Heading", items: [...] }` for sub-bullets.
 - **Contact text**: `contactText` sets the opening line of the "say hello" section.
+- **Certifications**: add an entry to `certifications` with `name` and `issuer`. `date`, `type` and `link` are optional; a `link` makes the name clickable.
 - **Resume**: put `resume.pdf` in `assets/` and set `links.resume: "assets/resume.pdf"`. Empty links are hidden.
 - **Colors**: change `--accent` and `--accent-2` at the top of `styles.css`.
 

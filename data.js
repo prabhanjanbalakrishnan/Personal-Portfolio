@@ -112,6 +112,32 @@ window.SITE = {
     }
   ],
 
+  // Certifications and courses, shown as cards in the order listed here.
+  // type, date and link are optional. Add a link to make the name clickable.
+  certifications: [
+    {
+      name: "Certified ScrumMaster® (CSM)",
+      issuer: "Scrum Alliance",
+      date: "Dec 2024",
+      type: "Certification",
+      link: ""
+    },
+    {
+      name: "Databricks Fundamentals Accreditation",
+      issuer: "Databricks Academy",
+      date: "Nov 2026",
+      type: "Accreditation",
+      link: ""
+    },
+    {
+      name: "Claude Code 101",
+      issuer: "Anthropic",
+      date: "Aug 2026",
+      type: "Course",
+      link: ""
+    }
+  ],
+
   // Work history, shown as a timeline. List the most recent role first.
   // A bullet can be "text", or { label: "Heading", items: ["sub-bullet", ...] } for grouped bullets.
   // Lines starting with // are notes for you and never appear on the site.
